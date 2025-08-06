@@ -1,3 +1,4 @@
+<audio id="myAudio" src="tss/DSi shop muisc.mp3" loop></audio>
 <!--  -----------------------------------------------------  -->
 <!--  Copyright 2005-2014 Acer Cloud Technology, Inc.        -->
 <!--  All Rights Reserved.                                   -->
@@ -175,6 +176,25 @@ function initPageCommon()
     showCurrentBalance();
     upWindowObject.scrollTo(0,0);
 }
+	document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('myAudio');
+
+    // Attempt to play the audio after user interaction (e.g., a click)
+    // Browsers often prevent autoplay without user interaction.
+    document.body.addEventListener('click', function() {
+        audio.play().catch(error => {
+            console.log("Autoplay prevented:", error);
+            // Handle cases where autoplay is blocked (e.g., show a play button)
+        });
+    }, { once: true }); // Ensure the event listener is removed after the first click
+
+    // Optional: Add event listener to handle the 'ended' event if not using 'loop'
+    // or for more complex playlist management.
+    // audio.addEventListener('ended', function() {
+    //     // Play the next song in a playlist or re-play the current one
+    //     audio.play();
+    // });
+});
 //-->
 </script>
 <!-- end Header.jspf -->
@@ -187,6 +207,7 @@ function initPageCommon()
 <script language="JavaScript" src="tss/tss/common/js/kugi/SceneChanger.js"></script>
 <script language="JavaScript" src="tss/tss/common/js/kugi/Transit.js"></script>
 
+</script>
 <style type="text/css">
 /* ----- */
 .button_224x28 {
