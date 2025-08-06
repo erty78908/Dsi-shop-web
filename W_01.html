@@ -70,14 +70,14 @@ var downWindowName = "DownWindow";
 //-->
 </script>
 <!-- end WindowNames.jspf -->
-<link rel="shortcut icon" href="/tss/favicon.ico" /> 
+<link rel="shortcut icon" href="tss/favicon.ico" /> 
 	
-<link rel=stylesheet type="text/css" href="/tss/tss/common/css/common.css">
+<link rel=stylesheet type="text/css" href="tss/tss/common/css/common.css">
 <script type="text/JavaScript">
 <!--
-var gkong = new Kong;
-window.name = downWindowName;
-var upWindowObject   = window.open('', upWindowName);
+//var gkong = new Kong;
+//window.name = downWindowName;
+//var upWindowObject   = window.open('', upWindowName);
 
 /* #### 2001002 #### Processing is blocked until you can get a upWindowObject. (Wabe@NCL) */
 while ( upWindowObject == null )
@@ -101,10 +101,10 @@ window.addEventListener('unload', function(){ gkong.ShowLoadingIcon(); }, false)
 //-->
 </script>
 <!-- end Header_d.jspf -->
-<SCRIPT language="JavaScript" src="/tss/tss/common/js//ec.js"></SCRIPT>
-<SCRIPT language="JavaScript" src='/tss/tss/common/js//error.js'></SCRIPT>
-<SCRIPT language="JavaScript" src="/tss/tss/common/js//oss.js"></SCRIPT>
-<SCRIPT language="JavaScript" src="/tss/tss/common/js//base.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="tss/tss/common/js//ec.js"></SCRIPT>
+<SCRIPT language="JavaScript" src='tss/tss/common/js//error.js'></SCRIPT>
+<SCRIPT language="JavaScript" src="tss/tss/common/js//oss.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="tss/tss/common/js//base.js"></SCRIPT>
 
 <script type="text/JavaScript">
 <!--
@@ -152,8 +152,8 @@ function initPageCommon()
 	
 	
 
-	imagesPath = "/tss/tss/common/images/";
-	htmlPath = "/tss/tss/common/html";
+	imagesPath = "tss/tss/common/images/";
+	htmlPath = "tss/tss/common/html";
 	ossPath = "https://tss.t.shop.nintendowifi.net/tss/serv/";
 	secureOssPath = "https://tss.t.shop.nintendowifi.net/tss/serv/";	
 
@@ -178,14 +178,14 @@ function initPageCommon()
 //-->
 </script>
 <!-- end Header.jspf -->
-<link rel="stylesheet" type="text/css" href="/tss/tss/common/css/preload.css">
-<link rel="stylesheet" type="text/css" href="/tss/tss/common/css/button_base.css"/>
-<link rel="stylesheet" type="text/css" href="/tss/tss/common/css/bottom_button.css"/>
+<link rel="stylesheet" type="text/css" href="tss/tss/common/css/preload.css">
+<link rel="stylesheet" type="text/css" href="tss/tss/common/css/button_base.css"/>
+<link rel="stylesheet" type="text/css" href="tss/tss/common/css/bottom_button.css"/>
 
-<script language="JavaScript" src="/tss/tss/common/js/Common.js"></script>
-<script language="JavaScript" src="/tss/tss/common/js/kugi/Button.js"></script>
-<script language="JavaScript" src="/tss/tss/common/js/kugi/SceneChanger.js"></script>
-<script language="JavaScript" src="/tss/tss/common/js/kugi/Transit.js"></script>
+<script language="JavaScript" src="tss/tss/common/js/Common.js"></script>
+<script language="JavaScript" src="tss/tss/common/js/kugi/Button.js"></script>
+<script language="JavaScript" src="tss/tss/common/js/kugi/SceneChanger.js"></script>
+<script language="JavaScript" src="tss/tss/common/js/kugi/Transit.js"></script>
 
 <style type="text/css">
 /* ----- */
@@ -347,7 +347,7 @@ function initPage()
 
     if ( newflag )
     {
-        $("imgNewInfo").innerHTML = '<img src="/tss/tss/common/images//new_update/new_s_US_EN.gif">&nbsp';
+        $("imgNewInfo").innerHTML = '<img src="tss/tss/common/images//new_update/new_s_US_EN.gif">&nbsp';
     }
     
     onload_no_scroll();
@@ -463,19 +463,19 @@ function showRecommendedTitles(titles, max)
         #shopWelcomeTitle { position : absolute; left : 0px; top : 76px; width : 248px; height: 40px; text-align : right; }
     </style>
         
-        <img class="bg_image" src="/tss/tss/common/images//shopx365_welcomePage.gif">
+        <img class="bg_image" src="tss/tss/common/images//shopx365_welcomePage.gif">
             <div id='shopWelcomeTitle' class='tx16 cBlue'>
             Nintendo DSi Shop</div>
     </div>
 </div>
 
-<img id="recommendFrame" src="/tss/tss/common/images//recommendFrame.gif"/>
+<img id="recommendFrame" src="tss/tss/common/images//recommendFrame.gif"/>
 <div class="btn_base button_224x28" id="btnRecommendList" shpbtn>
     <span class="btn_inner tx12">
         Recommended Titles</span>
 </div>
 
-<img id="new1" src="/tss/tss/common/images//new_update/new_s_US_EN.gif" style="display:none">
+<img id="new1" src="tss/tss/common/images//new_update/new_s_US_EN.gif" style="display:none">
         <div class="btn_base button_48x48" id="btnRecommend1" shpbtn>
             <div id="soft1"></div>
         </div>
@@ -486,8 +486,8 @@ function showRecommendedTitles(titles, max)
 </div>
 
 <div class="btn_base button_256x44" id="btnShopping" shpbtn>
-    <img class="btnShopping_child1" src="/tss/tss/common/images//icon_bag.png"/>
-    <img class="btnShopping_child2" src="/tss/tss/common/images//icon_bag.png"/>
+    <img class="btnShopping_child1" src="tss/tss/common/images//icon_bag.png"/>
+    <img class="btnShopping_child2" src="tss/tss/common/images//icon_bag.png"/>
     <div class="btnShopping_child3">
         <span class="vh_middle tx16 cBlue">
             Start Shopping</span>
